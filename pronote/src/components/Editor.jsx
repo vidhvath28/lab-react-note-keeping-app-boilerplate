@@ -20,7 +20,7 @@ export default class Editor extends Component {
 
   constructor(props) {
         super(props);
-        // to bind the method with the event handler without (). 
+       
         this.handleChange = this.handleChange.bind(this);
 
         this.state =
@@ -29,8 +29,7 @@ export default class Editor extends Component {
         };
     }
     
-    //event handler method to change the state.
-//setState is used to change the state.
+    
   handleChange(e){
         this.setState({value: e.target.value});
     } 
